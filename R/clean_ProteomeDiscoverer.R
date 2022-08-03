@@ -40,11 +40,6 @@
     quantification_column = .findAvailable(c("Intensity", "Area", "PrecursorArea"),
                                            colnames(pd_input),
                                            quantification_column)
-    protein_id_column = .findAvailable(c("ProteinAccessions", 
-                                         "MasterProteinAccessions",
-                                         "ProteinGroupAccessions"),
-                                       colnames(pd_input),
-                                       protein_id_column)
     sequence_column = .findAvailable(c("Sequence", "AnnotatedSequence"), 
                                      colnames(pd_input), 
                                      sequence_column)
